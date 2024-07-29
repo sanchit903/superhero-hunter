@@ -12,4 +12,4 @@ This is a web application that allows users to search for Marvel superheroes, vi
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/superhero-hunter.git
+   git clone https://github.com/sanchit903/superhero-hunter.git
