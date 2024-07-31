@@ -17,8 +17,10 @@ async function searchSuperheroes(query) {
   const url = `https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${query}&ts=${timestamp}&apikey=${publicKey}&hash=${hash}`;
 
   try {
+    showLoading();
     const response = await fetch(url);
     const data = await response.json();
+    hideLoading();
     displayResults(data.data.results);
   } catch (error) {
     console.error("Error fetching superheroes:", error);
